@@ -215,12 +215,14 @@ archivo.post('/delete_pedido', async (req, res) => {
             // Si el pedido existe, lo eliminamos de la base de datos
             const info = await orden.deleteOne({ id_pedido });
             // Enviamos una respuesta indicando que el pedido fue eliminado correctamente
-            res.redirect('http://localhost:8081/audio/RegistroActualizado.mp3')
-
+            //res.redirect('http://localhost:8081/audio/RegistroActualizado.mp3')
+            
+            res.redirect('https://gestionbd-2686-harold.up.railway.app/audio/RegistroActualizado.mp3')
         
 
         } else {
-            res.redirect('http://localhost:8081/audio/RegistroNoExiste.mp3')
+            //res.redirect('http://localhost:8081/audio/RegistroNoExiste.mp3')
+            res.redirect('https://gestionbd-2686-harold.up.railway.app/audio/RegistroNoExiste.mp3')
         }
     
 });
