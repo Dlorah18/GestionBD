@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "GestionBD": "nodemon src/indice.js"
+    "GestionBD": "nodemon src/indice.js",
+    "start": "node src/indice.js"
   },
   "author": "",
   "license": "ISC",
