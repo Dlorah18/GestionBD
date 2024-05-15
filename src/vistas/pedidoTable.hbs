@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Detalles del Pedido</title>
+</head>
+
+<body>
+    <section class="vh-100" style="background-color:lightcyan;">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="card" style="border-radius: 1rem;">
+                    <div class="card-header d-flex align-items-center mb-3 pb-1">
+                        <p class="h1 fw-bold mb-0 text-center">Detalle del Pedido</p>
+                    </div>
+                    <div class="row g-0" style="border-radius: 1rem;">
+
+                        <div class="card-body p-4 p-lg-5 text-black">
+
+                            <table class="table table-striped table-bordered table-responsive">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>ID del Pedido</th>
+                                        <th>Comprador</th>
+                                        <th>Valor</th>
+                                        <th>Artículo</th>
+                                        <th>Descripción</th>
+                                        <th>Fecha de Creación</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">{{ id_pedido }}</td>
+                                        <td>{{ comprador }}</td>
+                                        <td>{{ valor }}</td>
+                                        <td>{{ articulo }}</td>
+                                        <td>{{ descripcion }}</td>
+                                        <td>{{ date }}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
